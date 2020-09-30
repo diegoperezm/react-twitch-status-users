@@ -2,9 +2,7 @@ import  React  from 'react';
 import  { useState, useEffect }  from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-
-
-const placeholder = "./img/placeholder.png";
+import { formatUsersData } from './utils';
 
  const USERS = [
   "ESL_SC2",
@@ -44,37 +42,12 @@ const placeholder = "./img/placeholder.png";
     </table>
   : null;
 
+
+
+
   function Tr ( { onClick, selected, list, status} ) {
-
-    const idUsersOnline = status
-                              .filter( el => el.stream != null)
-                              .map( el =>   el.stream.channel._id );
-    
-    const usersOffline  = list
-                              .filter( el => !idUsersOnline.includes( el._id ) )
-                              .map( ele => Object.assign( {},
-                                      ({
-                                          name: ele.display_name,
-                                          logo: ele.logo || placeholder,
-                                          id: ele._id,
-                                          status: 'offline',
-                                          game: ''
-                               })));
-
-
-    const usersOnline = status
-                             .filter( el => el.stream != null )
-                             .map( ele =>
-                                  Object.assign( {},
-                                    ({
-                                    name: ele.stream.channel.display_name,
-                                    logo: ele.stream.channel.logo || placeholder,
-                                    id: ele.stream.channel._id,
-                                    status: 'online',
-                                     game: ele.stream.game
-                               })));
-   
-   const userDataAndStatusArr =   usersOnline.concat( usersOffline );
+  
+   const userDataAndStatusArr =  formatUsersData(list, status);
 
    var userInfo = userDataAndStatusArr.map(  el  =>
       <tr
