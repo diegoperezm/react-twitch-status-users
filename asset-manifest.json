@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-twitch-status-users/static/css/main.9c7a27d5.chunk.css",
+    "main.js": "/react-twitch-status-users/static/js/main.cdd1a296.chunk.js",
+    "main.js.map": "/react-twitch-status-users/static/js/main.cdd1a296.chunk.js.map",
+    "runtime-main.js": "/react-twitch-status-users/static/js/runtime-main.b28f05df.js",
+    "runtime-main.js.map": "/react-twitch-status-users/static/js/runtime-main.b28f05df.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/react-twitch-status-users/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.c073bf11.chunk.js": "/react-twitch-status-users/static/js/2.c073bf11.chunk.js",
+    "static/js/2.c073bf11.chunk.js.map": "/react-twitch-status-users/static/js/2.c073bf11.chunk.js.map",
+    "index.html": "/react-twitch-status-users/index.html",
+    "precache-manifest.edb4e8c6aa6c72d41ff5f37faca09a30.js": "/react-twitch-status-users/precache-manifest.edb4e8c6aa6c72d41ff5f37faca09a30.js",
+    "service-worker.js": "/react-twitch-status-users/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/react-twitch-status-users/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.9c7a27d5.chunk.css.map": "/react-twitch-status-users/static/css/main.9c7a27d5.chunk.css.map",
+    "static/js/2.c073bf11.chunk.js.LICENSE.txt": "/react-twitch-status-users/static/js/2.c073bf11.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b28f05df.js",
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.c073bf11.chunk.js",
+    "static/css/main.9c7a27d5.chunk.css",
+    "static/js/main.cdd1a296.chunk.js"
+  ]
+}
