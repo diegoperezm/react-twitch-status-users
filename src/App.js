@@ -1,8 +1,12 @@
 import  React  from 'react';
 import  { useState, useEffect }  from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import  Menu from './components/Menu';
+
+
 import { formatUsersData } from './utils';
+import './App.css';
+
 
  const USERS = [
   "ESL_SC2",
@@ -20,20 +24,6 @@ import { formatUsersData } from './utils';
  const USER_URL_ARR = USERS.map(ele => `${PATH_BASE}${PARAM_USER}${ele}`);
  const STREAM_URL_ARR = USERS.map(ele => `${PATH_BASE}${PARAM_STREAM}${ele}`);
 
- const Menu =  ( { isLoading, onClick } ) => ( isLoading )
-  ? <div>
-     <Menu />
-     <div className="message">
-       <h1>Loading&nbsp;...</h1>
-     </div>
-    </div>
-
- : <div className="menu" >
-     <button onClick={ onClick } >All</button>
-     <button onClick={ onClick } >Online</button>
-     <button onClick={ onClick } >Offline</button>
-   </div>;
-
 
  const Table = ( { isLoading, children } ) =>
   ( !isLoading )
@@ -41,8 +31,6 @@ import { formatUsersData } from './utils';
      { children }
     </table>
   : null;
-
-
 
 
   function Tr ( { onClick, selected, list, status} ) {
