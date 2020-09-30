@@ -8,7 +8,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import Menu from './components/Menu';
-import Table from './components/Table';
+import UsersTable from './components/UsersTable';
 
 
 
@@ -59,15 +59,17 @@ function App() {
      <Menu
         onClick={(event) => setSelected(event.target.textContent) }
         isLoading={ isLoading  } />
-     <Table
+     <UsersTable
        isLoading={ isLoading }
        selected={selected}
        list={result}
        status={stream} />
-        </Col>
+       </Col>
      </Row>
    </Container>
    );
 }
 
+
 export default App;
+
