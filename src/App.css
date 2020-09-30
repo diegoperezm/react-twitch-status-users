@@ -1,21 +1,6 @@
-html {
-    box-sizing: border-box;
-    height: 100vh;
-}
-
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
 body {
     min-height: 100%;
     background-color: antiquewhite;
-}
-
-.content {
-    max-width: 1024px; 
-    background-color: antiquewhite;
-    margin: 0 auto;
 }
 
 .message {

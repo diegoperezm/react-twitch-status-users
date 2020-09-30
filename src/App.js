@@ -1,10 +1,19 @@
 import  React  from 'react';
 import  { useState, useEffect }  from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import  Menu from './components/Menu';
-import  Table from './components/Table';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+import Menu from './components/Menu';
+import Table from './components/Table';
+
+
+
 import { USER_URL_ARR, STREAM_URL_ARR }  from './utils/';
+
 
 function App() {
   const [isLoading, setLoading]  = useState(true);
@@ -44,7 +53,9 @@ function App() {
   },[]);
 
    return (
-   <div className="content" >
+   <Container  >
+     <Row>
+       <Col xs={12}>
      <Menu
         onClick={(event) => setSelected(event.target.textContent) }
         isLoading={ isLoading  } />
@@ -53,7 +64,9 @@ function App() {
        selected={selected}
        list={result}
        status={stream} />
-   </div>
+        </Col>
+     </Row>
+   </Container>
    );
 }
 
