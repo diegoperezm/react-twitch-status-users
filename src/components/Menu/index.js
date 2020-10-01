@@ -12,7 +12,7 @@ const Menu =  ( { isLoading } ) => ( isLoading )
 
   : <Nav
       variant="pills"
-      defaultActiveKey="/all"
+      defaultActiveKey="/react-twitch-status-users/all"
       className="mt-2 mb-2"
     >
     <Nav.Item>
