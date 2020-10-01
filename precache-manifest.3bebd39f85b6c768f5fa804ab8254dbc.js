@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3978039e390f47d5c26041d9a8b85dbe",
+    "revision": "7fa128e93a5e6f2afb989bf8258e2e32",
     "url": "/react-twitch-status-users/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-twitch-status-users/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "de5cfb47cbf7fa1d657b",
+    "revision": "932ef75cadf1264ea549",
     "url": "/react-twitch-status-users/static/css/main.abe90e58.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-twitch-status-users/static/js/2.0a69466b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "de5cfb47cbf7fa1d657b",
-    "url": "/react-twitch-status-users/static/js/main.ec997c21.chunk.js"
+    "revision": "932ef75cadf1264ea549",
+    "url": "/react-twitch-status-users/static/js/main.eb9885c5.chunk.js"
   },
   {
     "revision": "efa7ef3b7ea64ca9c034",
