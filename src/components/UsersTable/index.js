@@ -3,7 +3,7 @@ import Table from 'react-bootstrap/Table';
 import OnlineUsers from './OnlineUsers';
 import OfflineUsers from './OfflineUsers';
 
-const AllUsersTable = ( { isLoading, selected, list, status  } ) =>
+const AllUsersTable = ( { isLoading, list, status  } ) =>
   ( !isLoading )
   ? <Table hover responsive>
      <tbody>
@@ -14,12 +14,10 @@ const AllUsersTable = ( { isLoading, selected, list, status  } ) =>
         <th>Game</th>
       </tr>
       <OnlineUsers
-         selected={selected}
          list={list}
          status={status}
       /> 
       <OfflineUsers
-        selected={selected}
         list={list}
        status={status}
       />
@@ -27,7 +25,7 @@ const AllUsersTable = ( { isLoading, selected, list, status  } ) =>
     </Table>
   : null;
 
-const OnlineUsersTable = ( { isLoading, selected, list, status  } ) =>
+const OnlineUsersTable = ( { isLoading, list, status  } ) =>
   ( !isLoading )
   ? <Table hover responsive>
      <tbody>
@@ -38,7 +36,6 @@ const OnlineUsersTable = ( { isLoading, selected, list, status  } ) =>
         <th>Game</th>
       </tr>
       <OnlineUsers
-         selected={selected}
          list={list}
          status={status}
       /> 
@@ -46,7 +43,7 @@ const OnlineUsersTable = ( { isLoading, selected, list, status  } ) =>
     </Table>
   : null;
 
-const OfflineUsersTable = ( { isLoading, selected, list, status  } ) =>
+const OfflineUsersTable = ( { isLoading, list, status  } ) =>
   ( !isLoading )
   ? <Table hover responsive>
      <tbody>
@@ -57,9 +54,8 @@ const OfflineUsersTable = ( { isLoading, selected, list, status  } ) =>
         <th>Game</th>
       </tr>
      <OfflineUsers
-        selected={selected}
         list={list}
-       status={status}
+        status={status}
       />
      </tbody>
     </Table>
