@@ -16,17 +16,17 @@ const Menu =  ( { isLoading } ) => ( isLoading )
       className="mt-2 mb-2"
     >
     <Nav.Item>
-    <LinkContainer to="/all">
+    <LinkContainer to="/react-twitch-status-users/all">
        <Nav.Link>All</Nav.Link>
      </LinkContainer>
     </Nav.Item>
     <Nav.Item>
-    <LinkContainer to="/online">
+    <LinkContainer to="/react-twitch-status-users/online">
       <Nav.Link>Online</Nav.Link>
      </LinkContainer>
     </Nav.Item>
     <Nav.Item>
-     <LinkContainer to="/offline">
+     <LinkContainer to="/react-twitch-status-users/offline">
        <Nav.Link>Offline</Nav.Link>
      </LinkContainer>
     </Nav.Item>

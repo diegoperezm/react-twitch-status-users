@@ -61,25 +61,25 @@ function App() {
          <Col xs={12}>
           <Menu isLoading={ isLoading  } />
          <Switch>
-            <Route exact path="/">
+            <Route exact path="/react-twitch-status-users/">
               <AllUsersTable 
                isLoading={ isLoading }
                list={result}
                status={stream} />
              </Route>
-            <Route exact path="/online">
+            <Route exact path="/react-twitch-status-users/online">
               <OnlineUsersTable 
                isLoading={ isLoading }
                list={result}
                status={stream} />
              </Route>
-             <Route exact path="/offline">
+             <Route exact path="/react-twitch-status-users/offline">
               <OfflineUsersTable 
                isLoading={ isLoading }
                list={result}
                status={stream} />
              </Route>
-            <Route exact path="/all">
+            <Route exact path="/react-twitch-status-users/all">
               <AllUsersTable 
                isLoading={ isLoading }
                list={result}
