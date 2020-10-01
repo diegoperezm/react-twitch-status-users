@@ -1,9 +1,9 @@
 import React from 'react';
 import { formatUsersData } from '../../utils';
 
-function Tr ( { selected, list, status} ) {
+function OnlineUsers ( { selected, list, status} ) {
  const userDataAndStatusArr =  formatUsersData(list, status);
- var userInfo = userDataAndStatusArr.map(  el  =>
+ let userInfo = userDataAndStatusArr.filter(elem => elem.status === 'online').map( el =>
     <tr
       key={  el.id }
       className={
@@ -49,16 +49,9 @@ function Tr ( { selected, list, status} ) {
       </td>
    </tr>);
 
-    return <tbody>
-      <tr className="table__th">
-        <th>logo</th>
-        <th>name</th>
-        <th>status</th>
-        <th>game</th>
-      </tr>
-      {  userInfo }
-    </tbody>;
+    return (<>{userInfo}</> );
+
  };
 
 
-export default Tr;
+export default OnlineUsers;
