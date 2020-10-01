@@ -12,21 +12,21 @@ const Menu =  ( { isLoading } ) => ( isLoading )
 
   : <Nav
       variant="pills"
-      defaultActiveKey="/react-twitch-status-users/all"
+      defaultActiveKey="#/all"
       className="mt-2 mb-2"
     >
     <Nav.Item>
-    <LinkContainer to="/react-twitch-status-users/all">
+    <LinkContainer to="/all">
        <Nav.Link>All</Nav.Link>
      </LinkContainer>
     </Nav.Item>
     <Nav.Item>
-    <LinkContainer to="/react-twitch-status-users/online">
+    <LinkContainer to="/online">
       <Nav.Link>Online</Nav.Link>
      </LinkContainer>
     </Nav.Item>
     <Nav.Item>
-     <LinkContainer to="/react-twitch-status-users/offline">
+     <LinkContainer to="/offline">
        <Nav.Link>Offline</Nav.Link>
      </LinkContainer>
     </Nav.Item>

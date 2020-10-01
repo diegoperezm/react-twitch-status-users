@@ -1,6 +1,6 @@
 import React                                     from 'react';
 import { useState, useEffect }                   from 'react';
-import {BrowserRouter as Router, Switch, Route,} from 'react-router-dom';
+import {HashRouter, Switch, Route,} from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -55,31 +55,31 @@ function App() {
   },[]);
 
  return (
-    <Router>
+ <HashRouter>
      <Container  >
        <Row>
          <Col xs={12}>
           <Menu isLoading={ isLoading  } />
          <Switch>
-            <Route exact path="/react-twitch-status-users/">
+            <Route exact path="/">
               <AllUsersTable 
                isLoading={ isLoading }
                list={result}
                status={stream} />
              </Route>
-            <Route exact path="/react-twitch-status-users/online">
+            <Route exact path="/online">
               <OnlineUsersTable 
                isLoading={ isLoading }
                list={result}
                status={stream} />
              </Route>
-             <Route exact path="/react-twitch-status-users/offline">
+             <Route exact path="/offline">
               <OfflineUsersTable 
                isLoading={ isLoading }
                list={result}
                status={stream} />
              </Route>
-            <Route exact path="/react-twitch-status-users/all">
+            <Route exact path="/all">
               <AllUsersTable 
                isLoading={ isLoading }
                list={result}
@@ -89,7 +89,7 @@ function App() {
             </Col>
        </Row>
      </Container>
-    </Router>
+    </HashRouter>
  );
 }
 
