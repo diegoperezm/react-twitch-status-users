@@ -56,34 +56,34 @@ function App() {
 
  return (
  <HashRouter>
-     <Container  >
-       <Row>
-         <Col xs={12}>
-          <Menu isLoading={ isLoading  } />
-         <Switch>
-            <Route exact path="/">
-              <AllUsersTable 
-               isLoading={ isLoading }
-               list={result}
-               status={stream} />
-             </Route>
-            <Route exact path="/online">
-              <OnlineUsersTable 
-               isLoading={ isLoading }
-               list={result}
-               status={stream} />
-             </Route>
-             <Route exact path="/offline">
-              <OfflineUsersTable 
-               isLoading={ isLoading }
-               list={result}
-               status={stream} />
-             </Route>
-           </Switch>
-            </Col>
-       </Row>
-     </Container>
-    </HashRouter>
+  <Container  >
+    <Row>
+      <Col xs={12}>
+       <Menu isLoading={ isLoading  } />
+      <Switch>
+         <Route exact path="/">
+           <AllUsersTable 
+            isLoading={ isLoading }
+            list={result}
+            status={stream} />
+          </Route>
+         <Route exact path="/online">
+           <OnlineUsersTable 
+            isLoading={ isLoading }
+            list={result}
+            status={stream} />
+          </Route>
+          <Route exact path="/offline">
+           <OfflineUsersTable 
+            isLoading={ isLoading }
+            list={result}
+            status={stream} />
+          </Route>
+        </Switch>
+         </Col>
+    </Row>
+  </Container>
+ </HashRouter>
  );
 }
 

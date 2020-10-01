@@ -70,6 +70,15 @@ h1 {
     margin: 0 auto;
 }
 
+.links {
+    display: block;
+    padding: .4rem;
+    border-radius: .25rem;
+}
+
+a {
+    text-decoration: none!important;
+}
 /* Breakpoints */
 
 @media screen and (max-width: 520px) {

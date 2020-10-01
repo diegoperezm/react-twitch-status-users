@@ -1,6 +1,6 @@
-import  React          from 'react';
-import  Nav            from 'react-bootstrap/Nav';
-import {LinkContainer} from 'react-router-bootstrap';
+import   React     from 'react';
+import   Nav       from 'react-bootstrap/Nav';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -13,23 +13,40 @@ const Menu =  ( { isLoading } ) => ( isLoading )
 
   : <Nav
       variant="pills"
-      defaultActiveKey="#/"
       className="mt-2 mb-2"
     >
     <Nav.Item>
-    <LinkContainer to="/">
-       <Nav.Link>All</Nav.Link>
-     </LinkContainer>
+      <NavLink
+       className="links"
+        exact
+        to="/"
+        activeStyle={{
+            color: '#fff',
+            backgroundColor: '#007bff',
+        }}
+      >All</NavLink>
     </Nav.Item>
     <Nav.Item>
-    <LinkContainer to="/online">
-      <Nav.Link>Online</Nav.Link>
-     </LinkContainer>
+      <NavLink
+       className="links"
+        exact
+        to="/online"
+        activeStyle={{
+            color: '#fff',
+            backgroundColor: '#007bff',
+        }}
+      >Online</NavLink>
     </Nav.Item>
     <Nav.Item>
-     <LinkContainer to="/offline">
-       <Nav.Link>Offline</Nav.Link>
-     </LinkContainer>
+      <NavLink
+       className="links"
+        exact
+        to="/offline"
+        activeStyle={{
+            color: '#fff',
+            backgroundColor: '#007bff',
+        }}
+       >Offline</NavLink>
     </Nav.Item>
    </Nav>;
 
