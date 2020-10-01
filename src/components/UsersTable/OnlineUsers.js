@@ -1,22 +1,12 @@
 import React from 'react';
 import { formatUsersData } from '../../utils';
 
-function OnlineUsers ( { selected, list, status} ) {
+function OnlineUsers ( { list, status} ) {
  const userDataAndStatusArr =  formatUsersData(list, status);
  let userInfo = userDataAndStatusArr.filter(elem => elem.status === 'online').map( el =>
     <tr
       key={  el.id }
-      className={
-          `table__tr  table__tr--${ el.status } ${
-          (
-          selected === 'All' ||
-          selected === 'Online' && el.status  === 'online' ||
-          selected === 'Offline' && el.status  === 'offline'
-          )
-          ? ''
-          : 'hidden'
-          }`
-          }
+      className={`table__tr  table__tr--${ el.status }`}
     >
       <td
         key={

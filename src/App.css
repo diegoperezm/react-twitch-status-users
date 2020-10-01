@@ -70,12 +70,6 @@ h1 {
     margin: 0 auto;
 }
 
-.menu {
-
-    margin-bottom: 5%;
-
-}
-
 /* Breakpoints */
 
 @media screen and (max-width: 520px) {

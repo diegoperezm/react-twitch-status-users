@@ -1,18 +1,36 @@
-import  React  from 'react';
+import  React          from 'react';
+import  Nav            from 'react-bootstrap/Nav';
+import {LinkContainer} from 'react-router-bootstrap';
 
-const Menu =  ( { isLoading, onClick } ) => ( isLoading )
+
+const Menu =  ( { isLoading } ) => ( isLoading )
   ? <div>
-     <Menu />
      <div className="message">
        <h1>Loading&nbsp;...</h1>
      </div>
     </div>
 
- : <div className="menu" >
-     <button onClick={ onClick } >All</button>
-     <button onClick={ onClick } >Online</button>
-     <button onClick={ onClick } >Offline</button>
-   </div>;
+  : <Nav
+      variant="pills"
+      defaultActiveKey="/all"
+      className="mt-2 mb-2"
+    >
+    <Nav.Item>
+    <LinkContainer to="/all">
+       <Nav.Link>All</Nav.Link>
+     </LinkContainer>
+    </Nav.Item>
+    <Nav.Item>
+    <LinkContainer to="/online">
+      <Nav.Link>Online</Nav.Link>
+     </LinkContainer>
+    </Nav.Item>
+    <Nav.Item>
+     <LinkContainer to="/offline">
+       <Nav.Link>Offline</Nav.Link>
+     </LinkContainer>
+    </Nav.Item>
+   </Nav>;
 
 
 export default Menu;
