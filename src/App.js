@@ -79,13 +79,7 @@ function App() {
                list={result}
                status={stream} />
              </Route>
-            <Route exact path="/all">
-              <AllUsersTable 
-               isLoading={ isLoading }
-               list={result}
-               status={stream} />
-             </Route>
-            </Switch>
+           </Switch>
             </Col>
        </Row>
      </Container>

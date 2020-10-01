@@ -3,6 +3,7 @@ import  Nav            from 'react-bootstrap/Nav';
 import {LinkContainer} from 'react-router-bootstrap';
 
 
+
 const Menu =  ( { isLoading } ) => ( isLoading )
   ? <div>
      <div className="message">
@@ -12,11 +13,11 @@ const Menu =  ( { isLoading } ) => ( isLoading )
 
   : <Nav
       variant="pills"
-      defaultActiveKey="#/all"
+      defaultActiveKey="#/"
       className="mt-2 mb-2"
     >
     <Nav.Item>
-    <LinkContainer to="/all">
+    <LinkContainer to="/">
        <Nav.Link>All</Nav.Link>
      </LinkContainer>
     </Nav.Item>
