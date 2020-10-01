@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/react-twitch-status-users/precache-manifest.a7f7df7768c3cdc649ab742be645dee4.js"
+  "/react-twitch-status-users/precache-manifest.967331bba506095afad90f7d8e334a56.js"
 );
 
 self.addEventListener('message', (event) => {
