@@ -1,6 +1,7 @@
 import React from 'react';
 import { formatUsersData } from '../../utils';
 import { v4 as uuidv4 } from 'uuid';
+import { PLACEHOLDER }  from '../../utils';
 
 function OfflineUsers ( {  list, status} ) {
  const userDataAndStatusArr =  formatUsersData(list, status);
@@ -16,6 +17,7 @@ function OfflineUsers ( {  list, status} ) {
           key={ uuidv4()}
           alt=""
           src={ el.logo }
+          onError={(e)=>{ if(PLACEHOLDER !== undefined ) e.target.src=PLACEHOLDER;}}
           className="table__td__img"
         />
       </td>
