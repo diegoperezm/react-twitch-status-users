@@ -1,7 +1,8 @@
 # React Twitch Status Users
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ A simple project that consumes JSON (data) objects. I used `react-router-dom` for navigation, `hooks` for state management  and side effects. The project only uses `functions` (not classes). 
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## About the Free Code Camp Twitch API Pass-through
 
